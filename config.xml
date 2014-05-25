@@ -1,12 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.mmehdi.weather" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>HelloCordova</name>
+    <name>WeatherApp</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        A basic weather application
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team
     </author>
     <content src="index.html" />
-    <access origin="*" />
+    <access uri="http://api.openweathermap.org" subdomains="true" />
+    <rim:permissions>
+        <rim:permit>access_location_services</rim:permit>
+    </rim:permissions>
 </widget>
