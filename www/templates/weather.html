@@ -1,0 +1,10 @@
+<div ng-controller="locationCtrl">
+    <form role="form">
+        <div class="form-group">
+            <label for="location">Location</label>
+            <input type="text" id="location" placeholder="Enter a location" ng-model="location">
+            <button type="submit" class="btn btn-info" ng-click="myData.doClick(item, $event)">Submit</button>
+        </div>
+    </form>
+    <h3>{{myData.fromServer}}</h3>
+</div>
