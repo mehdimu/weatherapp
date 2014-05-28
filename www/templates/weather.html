@@ -1,10 +1,20 @@
 <div ng-controller="locationCtrl">
-    <form role="form">
-        <div class="form-group">
+    <div class="panel panel-success">
+        <div class="panel-heading">
+        <h3 class="panel-title">Weather</h3>
+      </div>
+      <div class="panel-body"><br/>
+          <p>
+            Today's Weather is: &nbsp;&nbsp;
+            <span id="show-temp"></span>  
+          </p>
+          <hr>
+        <form role="form">
             <label for="location">Location</label>
-            <input type="text" id="location" placeholder="Enter a location" ng-model="location">
+            <input type="text" id="location" placeholder="Enter a location" ng-model="location"><br/><br/>
             <button type="submit" class="btn btn-info" ng-click="myData.doClick(item, $event)">Submit</button>
+            <button type="submit" class="btn btn-warning" ng-click="myData.getLocation()">Local</button>
+        </form>
         </div>
-    </form>
-    <h3>{{myData.fromServer}}</h3>
+    </div>
 </div>
