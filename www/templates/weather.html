@@ -11,9 +11,14 @@
           <hr>
         <form role="form">
             <label for="location">Location</label>
-            <input type="text" id="location" placeholder="Enter a location" ng-model="location"><br/><br/>
-            <button type="submit" class="btn btn-info" ng-click="myData.doClick(item, $event)">Submit</button>
-            <button type="submit" class="btn btn-warning" ng-click="myData.getLocation()">Local</button>
+            <input type="text" id="location" placeholder="Enter a location" ng-model="location">
+            <br/><br/>
+            <button type="submit" class="btn btn-info" ng-click="weather.getWeather()">
+                Submit
+            </button>
+            <button type="submit" class="btn btn-warning" ng-click="weather.getLocation()">
+                Local
+            </button>
         </form>
         </div>
     </div>
