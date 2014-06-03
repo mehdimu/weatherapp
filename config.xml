@@ -12,4 +12,5 @@
     <rim:permissions>
         <rim:permit>access_location_services</rim:permit>
     </rim:permissions>
+    <rim:splash src="img/splash.png" />
 </widget>

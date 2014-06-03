@@ -1,3 +1,7 @@
+$(function() {
+    FastClick.attach(document.body);
+});
+
 var app = angular.module("app", ['ui.router'] );
 
 app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
