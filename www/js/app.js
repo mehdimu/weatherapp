@@ -1,3 +1,4 @@
+// Instantiate fastclick.js 
 $(function() {
     FastClick.attach(document.body);
 });
@@ -12,7 +13,10 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
                 "menu": {
                     templateUrl: "templates/menu.html"
                 },
-                "content":{templateUrl: "templates/weather.html"}
+                "content": {
+                    templateUrl: "templates/weather.html",
+                    controller: "locationCtrl"                    
+                }
             }
         });
         $stateProvider.state("clock", {
@@ -23,11 +27,8 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
                 },
                 "content": {
                     templateUrl: "templates/clock.html",
-                    controller: function ($scope) {
-                        $scope.time = "12 O'Clock";
-                    }
+                    controller: "clockCtrl"
                 }
             }
-
         });
    }]);
