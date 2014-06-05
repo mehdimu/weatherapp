@@ -3,7 +3,7 @@ app.controller("locationCtrl", function ($scope, $http) {
     $scope.weather.loadingIMG = '<img src="../img/animated_loading.gif" height="25px">'
     $scope.weather.getWeather = function (position) {
         var baseUrl, lat, lon, requestUrl, responsePromise;
-        baseUrl = "http://api.openweathermap.org/data/2.5/weather?units=metric&";
+        baseUrl = "http://api.openweathermap.org/data/2.5/weather?units=metric&APPID=d0945ea3687d4d6156b72429f6df09bd&";
         if (position) {
             lat = position.coords.latitude;
             lon = position.coords.longitude;

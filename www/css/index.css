@@ -15,7 +15,10 @@
   width: 100%;
 }
 
-.panel-title {
+#view-content {
+    padding-bottom: 40px;
+}
+#tab-panel {
     text-align: center;
     font-size: 20px;
 }

@@ -9,6 +9,7 @@
     </author>
     <content src="index.html" />
     <access uri="http://api.openweathermap.org" subdomains="true" />
+    <access uri="https://ajax.googleapis.com" subdomains="true" />
     <rim:permissions>
         <rim:permit>access_location_services</rim:permit>
     </rim:permissions>
