@@ -1,0 +1,28 @@
+<div class="panel panel-success">
+    <div class="panel-heading">
+        <h3 class="panel-title" id="tab-panel">Newsfeed</h3>
+    </div>
+    <div class="panel-body"><br/>
+        <p id="show-clock">
+            Google News
+        </p><br/>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-success" type="submit" ng-click="getNews()">Search!</button>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Keyword" ng-model="keyword">
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+<span ng-repeat="n in news">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title" ng-bind-html="n.title"></h3>
+        </div>
+        <div class="panel-body" ng-bind-html="n.content"></div>
+    </div>        
+</span> 

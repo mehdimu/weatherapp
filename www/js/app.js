@@ -31,4 +31,16 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
                 }
             }
         });
+        $stateProvider.state("news", {
+            url: "/news",
+            views: {
+                "menu": {
+                    templateUrl: "templates/menu.html"
+                },
+                "content": {
+                    templateUrl: "templates/news.html",
+                    controller: "newsCtrl"
+                }
+            }
+        });
    }]);
