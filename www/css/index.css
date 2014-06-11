@@ -18,6 +18,11 @@
 #view-content {
     padding-bottom: 40px;
 }
+
+.view-content-nav-pills > li > a {
+  border-radius: 0px;
+}
+
 #tab-panel {
     text-align: center;
     font-size: 20px;
