@@ -35,3 +35,27 @@
     font-size: 30px;
     text-align: center;
 }
+
+.slide-animation.ng-enter {
+    position: relative;
+    transition: 1s;
+    opacity: 0;
+    right: 100%;
+}
+.slide-animation.ng-enter-stagger {
+    transition-delay: 0.75s;
+}
+.slide-animation.ng-enter-active {
+    opacity: 1;
+    right: 0%;
+}
+.slide-animation.ng-leave {
+    opacity: 1;
+    right: 0%;
+    position: relative;
+    transition: 0.95s;
+}
+.slide-animation.ng-leave-active {
+    opacity: 0;
+    right: 100%;
+}

@@ -3,7 +3,7 @@ $(function() {
     FastClick.attach(document.body);
 });
 
-var app = angular.module("app", ['ui.router', 'ngSanitize'] );
+var app = angular.module("app", ['ui.router', 'ngSanitize', 'ngAnimate'] );
 
 app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
         $urlRouterProvider.otherwise('/');
