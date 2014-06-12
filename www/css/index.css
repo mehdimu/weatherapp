@@ -1,18 +1,17 @@
 @media (min-width: 200px) {
-  .nav-justified-bb10 > li {
+    .nav-justified-bb10 > li {
     display: table-cell;
     width: 1%;
-  }
-  .nav-justified-bb10 > li > a {
+    }
+    .nav-justified-bb10 > li > a {
     margin-bottom: 0;
-  }
+    }
 }
 
 #footer {
-  position: fixed;
-  bottom: 0;
-  background-color: white;
-  width: 100%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 #view-content {
@@ -20,7 +19,16 @@
 }
 
 .view-content-nav-pills > li > a {
-  border-radius: 0px;
+    border-radius: 0px;
+    background-color: grey;
+    color: black;
+}
+
+.view-content-nav-pills > li.active > a,
+.view-content-nav-pills > li.active > a:hover,
+.view-content-nav-pills > li.active > a:focus {
+    color: white;
+    background-color: #DB2929;
 }
 
 #tab-panel {
