@@ -1,20 +1,32 @@
-<div ng-controller="locationCtrl">
-    <div class="panel panel-success">
-        <div class="panel-heading">
-        <h3 class="panel-title">Weather</h3>
-      </div>
-      <div class="panel-body"><br/>
-          <p>
+<div class="panel panel-success">
+    <div class="panel-heading">
+        <h3 class="panel-title" id="tab-panel">Weather</h3>
+    </div>
+    <div class="panel-body">
+        <p>
             Today's Weather is: &nbsp;&nbsp;
-            <span id="show-temp"></span>  
-          </p>
-          <hr>
-        <form role="form">
-            <label for="location">Location</label>
-            <input type="text" id="location" placeholder="Enter a location" ng-model="location"><br/><br/>
-            <button type="submit" class="btn btn-info" ng-click="myData.doClick(item, $event)">Submit</button>
-            <button type="submit" class="btn btn-warning" ng-click="myData.getLocation()">Local</button>
-        </form>
+            <span id="show-temp"></span>
+        </p>
+        <hr>
+        <div class="row">
+            <div class="col-xs-3">
+                <label for="location">Location</label>
+            </div>
+            <div class="col-xs-9">
+                <input type="text" class="form-control" id="location" placeholder="Enter a location" ng-model="location">
+            </div>
+        </div><br/>
+        <div class="row">
+            <div class="col-xs-3">
+                <button type="submit" class="btn btn-info" ng-click="weather.getWeather()">
+                    Submit
+                </button>
+            </div>
+            <div class="col-xs-3">
+                <button type="submit" class="btn btn-warning" ng-click="weather.getLocation()">
+                    Local
+                </button>
+            </div>
         </div>
     </div>
 </div>
