@@ -33,7 +33,6 @@ module.exports = function(grunt) {
                 'dist/js/app.js' :'www/js/app.js',
                 'dist/js/bootstrap/bootstrap.min.js' :'www/js/bootstrap/bootstrap.min.js',
                 'dist/js/fastclick.js' :'www/js/fastclick.js',
-                'dist/js/index.js' :'www/js/index.js',
                 'dist/js/jquery-1.11.1.min.js' :'www/js/jquery-1.11.1.min.js',
                 }
             }
@@ -53,6 +52,7 @@ module.exports = function(grunt) {
               files: [
                 // makes all src relative to cwd
                   {expand: true, cwd: 'www/js/angular/', src: ['*.min.js'], dest: 'dist/js/angular/'},
+                  {expand: true, cwd: 'www/img/', src: ['*.png'], dest: 'dist/img/'},
                   {expand: true, cwd: 'www/css/font_awesome/fonts/', src: ['*'], dest: 'dist/css/font_awesome/fonts/'},
               ]
           },
