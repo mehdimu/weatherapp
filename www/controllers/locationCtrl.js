@@ -1,4 +1,4 @@
-app.controller("locationCtrl", function ($scope, $http) {
+app.controller("locationCtrl", ['$scope', '$http', function ($scope, $http) {
     $scope.weather = {};
     $scope.weather.loadingIMG = '<i class="fa fa-circle-o-notch fa-spin"></i>'
     $scope.weather.getWeather = function (position) {
@@ -38,4 +38,4 @@ app.controller("locationCtrl", function ($scope, $http) {
             alert("Error");
         }
     }
-});
+}]);

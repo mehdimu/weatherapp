@@ -1,4 +1,4 @@
-app.controller('clockCtrl', function ($scope, $http) {
+app.controller('clockCtrl', ['$scope', '$http', function ($scope, $http) {
     $scope.getNews = function () {
         var baseUrl = "https://ajax.googleapis.com/ajax/services/search/news?v=1.0&callback=JSON_CALLBACK";
         var url = baseUrl + "&q=" + $scope.keyword;
@@ -11,4 +11,4 @@ app.controller('clockCtrl', function ($scope, $http) {
             console.error('Error fetching feed:', data);
         });
     };
-});
+}]);

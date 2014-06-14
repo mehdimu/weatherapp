@@ -1,4 +1,4 @@
-app.controller('newsCtrl', function ($scope, $http, $timeout) {
+app.controller('newsCtrl', ['$scope', '$http', '$timeout', function ($scope, $http, $timeout) {
     $scope.getNews = function () {
         $scope.news = {};
         var baseUrl = "https://ajax.googleapis.com/ajax/services/search/news?v=1.0&callback=JSON_CALLBACK";
@@ -17,4 +17,4 @@ app.controller('newsCtrl', function ($scope, $http, $timeout) {
             $scope.news = [];
         });
     };
-});
+}]);
