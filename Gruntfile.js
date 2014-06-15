@@ -9,7 +9,7 @@ module.exports = function(grunt) {
                 minifyJS: true,
                 minifyCSS: true,
               },
-              files: {                                   // Dictionary of files
+              files: {  // Dictionary of files
                 'dist/index.html' :'www/index.html',
                 'dist/templates/clock.html' :'www/templates/clock.html',
                 'dist/templates/menu.html' :'www/templates/menu.html',
@@ -26,10 +26,6 @@ module.exports = function(grunt) {
                 'dist/controllers/locationCtrl.js' :'www/controllers/locationCtrl.js',
                 'dist/controllers/newsCtrl.js' :'www/controllers/newsCtrl.js',
                 'dist/js/angular/angular-animate.js' :'www/js/angular/angular-animate.js',
-//                'dist/js/angular/angular-animate.min.js' :'www/js/angular/angular-animate.min.js',
-//                'dist/js/angular/angular-sanitize.min.js' :'www/js/angular/angular-sanitize.min.js',
-////                'dist/js/angular/angular-ui-router.min.js' :'www/js/angular/angular-ui-router.min.js',
-////                'dist/js/angular/angular.min.js' :'www/js/angular/angular.min.js',
                 'dist/js/app.js' :'www/js/app.js',
                 'dist/js/bootstrap/bootstrap.min.js' :'www/js/bootstrap/bootstrap.min.js',
                 'dist/js/fastclick.js' :'www/js/fastclick.js',
@@ -50,10 +46,9 @@ module.exports = function(grunt) {
         copy: {
           main: {
               files: [
-                // makes all src relative to cwd
-                  {expand: true, cwd: 'www/js/angular/', src: ['*.min.js'], dest: 'dist/js/angular/'},
-                  {expand: true, cwd: 'www/img/', src: ['*.png'], dest: 'dist/img/'},
-                  {expand: true, cwd: 'www/css/font_awesome/fonts/', src: ['*'], dest: 'dist/css/font_awesome/fonts/'},
+                {expand: true, cwd: 'www/js/angular/', src: ['*.min.js'], dest: 'dist/js/angular/'},
+                {expand: true, cwd: 'www/img/', src: ['*.png'], dest: 'dist/img/'},
+                {expand: true, cwd: 'www/css/font_awesome/fonts/', src: ['*'], dest: 'dist/css/font_awesome/fonts/'},
               ]
           },
         }
