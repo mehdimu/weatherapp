@@ -55,6 +55,20 @@ module.exports = function(grunt) {
 
         jshint: {
             all: ['Gruntfile.js', 'www/controllers/*.js', 'www/js/app.js']
+        },
+
+        connect: {
+            server: {
+                options: {
+                    port: 9001,
+                    base: 'www'
+                }
+            }
+        },
+
+        watch: {
+            files: ['www/**/*'],
+            tasks: []
         }
     });
 
@@ -64,7 +78,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Define your tasks here
     grunt.registerTask('default', ['jshint', 'copy', 'htmlmin', 'uglify', 'cssmin']);
+    grunt.registerTask('live', ['connect', 'watch']);
 };
