@@ -37,9 +37,10 @@
 }
 
 #show-temp {
-    color: blue;
+    color: #8B0000;
     font-family: tahoma;
     font-size: 20px;
+    font-weight: 300;
 }
 
 #show-clock {
